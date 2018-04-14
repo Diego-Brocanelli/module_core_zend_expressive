@@ -20,7 +20,7 @@ class FlashMessenger
     public function __construct()
     {
         $this->flashMessenger = (new ViewHelper())
-            ->setPlugin(new Plugin());
+             ->setPluginFlashMessenger(new Plugin());
     }
     
     /**
@@ -30,7 +30,7 @@ class FlashMessenger
      */
     public function getFlashMessenger()
     {
-        return $this->flashMessenger->getPlugin();
+        return $this->flashMessenger->getPluginFlashMessenger();
     }
     
     /**
